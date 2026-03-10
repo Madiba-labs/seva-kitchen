@@ -1,0 +1,15 @@
+{
+"name": "SEVA Kitchen",
+"short_name": "SEVA",
+"start_url": "index.html",
+"display": "standalone",
+"background_color": "#C85A2E",
+"theme_color": "#C85A2E",
+"icons":[
+{
+"src":"images/logo-seva.png",
+"sizes":"192x192",
+"type":"image/png"
+}
+]
+}

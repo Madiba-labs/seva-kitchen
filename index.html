@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SEVA Kitchen</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<nav class="navbar">
+
+<button onclick="showPage('home')">Accueil</button>
+<button onclick="showPage('menu')">Menu</button>
+<button onclick="showPage('commande')">Commander</button>
+<button onclick="showPage('info')">Information</button>
+
+</nav>
+
+
+
+<!-- ACCUEIL -->
+
+<section id="home" class="page active">
+
+<div class="hero">
+
+<img src="images/logo-seva.jpeg" class="logo">
+
+<h1>Bienvenue chez SEVA</h1>
+
+<p>Des plats faits maison avec amour</p>
+
+</div>
+
+</section>
+
+
+
+<!-- MENU -->
+
+<section id="menu" class="page">
+
+<div class="menu">
+
+
+<div class="card" onclick="openDish(
+'Tagliatelles crème',
+'Poulet, ail, crème fraîche',
+'3500 FCFA',
+'images/tagliatelles.jpeg'
+)">
+<img src="images/tagliatelles.jpeg">
+<h3>Tagliatelles crème</h3>
+<p>Poulet, ail, crème fraîche</p>
+<span>3500 FCFA</span>
+</div>
+
+
+<div class="card" onclick="openDish(
+'Gratin pomme de terre',
+'Pomme de terre à la viande',
+'4000 FCFA',
+'images/gratin.jpeg'
+)">
+<img src="images/gratin.jpeg">
+<h3>Gratin pomme de terre</h3>
+<p>Pomme de terre à la viande</p>
+<span>4000 FCFA</span>
+</div>
+
+<div class="card" onclick="openDish(
+'Lasagnes classiques',
+'Sauce viande hachée maison',
+'5000 FCFA',
+'images/lasagnes.jpeg'
+)">
+<img src="images/lasagnes.jpeg">
+<h3>Lasagnes classiques</h3>
+<p>Sauce viande hachée maison</p>
+<span>5000 FCFA</span>
+</div>
+
+</section>
+
+
+
+<!-- COMMANDER -->
+
+<section id="commande" class="page">
+
+<div class="commande-box">
+
+<h2>Comment commander ?</h2>
+
+<div class="steps">
+
+<div class="step">
+<i class="fa-solid fa-utensils"></i>
+<p>Cliquez sur le menu choisi</p>
+</div>
+
+<div class="step">
+<i class="fa-brands fa-whatsapp"></i>
+<p>Écrivez-nous sur WhatsApp</p>
+</div>
+
+<div class="step">
+<i class="fa-solid fa-list"></i>
+<p>Passez votre commande</p>
+</div>
+
+<div class="step">
+<i class="fa-solid fa-money-bill-wave"></i>
+<p>Paiement Mobile Money</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INFO -->
+
+<section id="info" class="page">
+
+<div class="info-section">
+
+<h2>Information importante</h2>
+
+<p>📌 Commandez la veille</p>
+
+<p>⏰ Dernier délai : 8h30</p>
+
+<br>
+
+<h3>Suivez-nous sur</h3>
+
+<div class="social">
+
+<a href="https://instagram.com/seva.kitchenn" target="_blank">
+📸 Instagram
+</a>
+
+<a href="https://tiktok.com/@seva.kitchen" target="_blank">
+🎵 TikTok
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Suivez-nous sur</p>
+
+<a href="https://instagram.com/seva.kitchenn" target="_blank">
+
+📸 Instagram
+
+</a>
+
+<a href="https://tiktok.com/@seva.kitchen" target="_blank">
+
+🎵 TikTok
+
+</a>
+
+</footer>
+
+
+
+<!-- BOUTON WHATSAPP -->
+
+<a href="https://wa.me/2250759792044" class="whatsapp">
+
+💬
+
+</a>
+
+
+<script src="js/script.js"></script>
+
+
+<div id="dishPopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeDish()">✖</span>
+
+<img id="popupImage">
+
+<h2 id="popupTitle"></h2>
+
+<p id="popupDesc"></p>
+
+<h3 id="popupPrice"></h3>
+
+<a id="popupOrder" href="#" target="_blank" class="order-btn">
+Commander sur WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+</body>
+</html>
