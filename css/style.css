@@ -515,17 +515,21 @@ border-radius:10px;
 }
 /* Animation pages */
 
+/* Animation slide */
+
 .page{
+position:absolute;
+width:100%;
 opacity:0;
-transform:translateY(20px);
-transition:all 0.5s ease;
+transform:translateX(50px);
+transition:all 0.4s ease;
 }
 
 .page.active{
 opacity:1;
-transform:translateY(0);
+transform:translateX(0);
+position:relative;
 }
-@media(max-width:768px){
 
 .navbar{
 flex-direction:column;
@@ -534,10 +538,30 @@ padding:10px;
 }
 
 .navbar button{
-width:90%;
-margin:auto;
-font-size:15px;
-padding:12px;
+
+padding:6px 14px;
+font-size:13px;
+border-radius:18px;
+
+}
+@media (max-width:768px){
+
+.navbar{
+
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+gap:6px;
+padding:10px;
+
+}
+
+.navbar button{
+
+font-size:12px;
+padding:6px 12px;
+width:auto;
+
 }
 
 }
