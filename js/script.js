@@ -1,14 +1,14 @@
-function showPage(page){
+function showPage(pageId){
 
-let pages=document.querySelectorAll(".page")
+const pages = document.querySelectorAll('.page');
 
-pages.forEach(function(p){
+pages.forEach(page=>{
+page.classList.remove('active');
+});
 
-p.classList.remove("active")
-
-})
-
-document.getElementById(page).classList.add("active")
+setTimeout(()=>{
+document.getElementById(pageId).classList.add('active');
+},100);
 
 }
 function openDish(title,desc,price,image){
