@@ -548,19 +548,21 @@ border-radius:18px;
 
 .navbar{
 
-flex-direction:row;
-flex-wrap:wrap;
-justify-content:center;
-gap:6px;
+display:flex;
+justify-content:space-around;
+align-items:center;
+flex-wrap:nowrap;
 padding:10px;
+gap:5px;
 
 }
 
 .navbar button{
 
 font-size:12px;
-padding:6px 12px;
-width:auto;
+padding:6px 10px;
+border-radius:15px;
+flex:1;
 
 }
 
